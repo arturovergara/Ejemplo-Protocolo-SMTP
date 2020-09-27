@@ -1,0 +1,22 @@
+[
+	{
+		"id": 1,
+		"username": "helios",
+		"mail": "helios@pucv.localdomain"
+	},
+	{
+		"id": 2,
+		"username": "bastian",
+		"mail": "bastian@pucv.localdomain"
+	},
+	{
+		"id": 3,
+		"username": "astudillo",
+		"mail": "astudillo@pucv.localdomain"
+	},
+	{
+		"id": 4,
+		"username": "arturo",
+		"mail": "arturo@pucv.localdomain"
+	}
+]
