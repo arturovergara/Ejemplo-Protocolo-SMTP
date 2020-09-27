@@ -51,9 +51,9 @@ typedef struct email
 //Variables globales
 int maximo_conexiones;			//Cantidad maxima de conexiones simultaneas
 struct lista* conexiones;		//Lista enlazada de conexiones (cliente)
-List* usuarios;					//Lista enlazada de usuarios
-Queue* emails;					//Cola de emails que van siendo enviados
-pthread_t thread;				//Ultimo hilo ejecutado
+List* usuarios;				//Lista enlazada de usuarios
+Queue* emails;				//Cola de emails que van siendo enviados
+pthread_t thread;			//Ultimo hilo ejecutado
 
 void inicializar();
 void* smtp(void* argumentos_thread);
@@ -92,7 +92,7 @@ int main (int argc, char *argv[])
 		//Queda a la espera por siempre de nuevas conexiones
 		select(maximo_conexiones+1, &sockets, NULL, NULL, NULL);
 
-		// Iterate through the sockets looking for one with a new connection
+		//Recorre toda la lista enlazada de sockets en busca de una nueva conexion
 		for (auxiliar = conexiones; auxiliar != NULL; auxiliar = auxiliar->siguiente)
 		{
 			if (FD_ISSET(auxiliar->dato, &sockets))
