@@ -1,4 +1,4 @@
-# Ejemplo-Protocolo-SMTP-en-C
+# Ejemplo de Protocolo SMTP en C
 Pequeño servidor SMTP no funcional, creado de manera didáctica para estudiar conceptos de networking, además de hilos.
 
 ### Comandos SMTP Implementados
