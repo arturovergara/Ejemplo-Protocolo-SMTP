@@ -59,7 +59,7 @@ void inicializar();
 void* smtp(void* argumentos_thread);
 void strToUpper(char*);
 
-int main (int argc, char *argv[])
+int main (int argc, char* argv[])
 {
 	struct sockaddr_storage direccion_cliente;
 	socklen_t direccion_size = sizeof(direccion_cliente);
