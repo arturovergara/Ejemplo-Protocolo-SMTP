@@ -16,8 +16,8 @@ Se han implementado solamente los siguientes comandos SMTP:
 | QUIT | Finaliza la comunicación con el servidor. | 
 
 ### Dependencias
-`sudo apt install libjson-c-dev`
+``sudo apt install libjson-c-dev``
 
 ### Compilar
-`gcc server.c users.c list.c queue.c -o server -ljson-c -lpthread`
+``gcc server.c users.c list.c queue.c -o server -ljson-c -lpthread``
 
